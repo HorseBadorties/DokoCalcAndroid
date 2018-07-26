@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="preferences_entries_uschi_speaks_results">
+        <item>gar nicht</item>
+        <item>nur die Punkteanzahl</item>
+        <item>das Ergebnis vorrechnen</item>
+    </string-array>
+
+    <string-array name="preferences_entryvalues_uschi_speaks_results">
+        <item>SHUT_UP</item>
+        <item>TELL_RESULT</item>
+        <item>EXPLAIN_RESULT</item>
+    </string-array>
+
+</resources>

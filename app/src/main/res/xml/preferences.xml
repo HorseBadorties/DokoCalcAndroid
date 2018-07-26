@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Allgemeine Einstellungen">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="PREF_KEEP_SCREEN_ON"
+            android:summary="Soll der Ruhezustand nach Inaktivität (Bildschirm wird gesperrt/ausgeschaltet) verhindert werden?"
+            android:title="Ruhezustand verhindern" />
+        <CheckBoxPreference
+            android:key="PREF_SHOW_BERECHNUNG_PRUEFEN"
+            android:summary="Soll die Funktion 'Berechnung prüfen' als Button angezeigt werden?"
+            android:title="'Berechnung prüfen' als Button" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Uschi konfigurieren">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PREF_USCHI_SPEAKS"
+            android:summary="Soll Uschi überhaupt was sagen?"
+            android:title="Uschi spricht" />
+
+        <ListPreference
+            android:defaultValue="TELL_RESULT"
+            android:dependency="PREF_USCHI_SPEAKS"
+            android:dialogTitle="Wie soll Uschi das Ergebnis nach jeder Runde ansagen?"
+            android:entries="@array/preferences_entries_uschi_speaks_results"
+            android:entryValues="@array/preferences_entryvalues_uschi_speaks_results"
+            android:key="PREF_USCHI_TELLS_RESULTS"
+            android:summary="Wie soll Uschi das Ergebnis nach jeder Runde ansagen?"
+            android:title="Uschi sagt Ergebnis" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="PREF_USCHI_SPEAKS"
+            android:enabled="true"
+            android:key="PREF_USCHI_COMMENTS"
+            android:summary="Soll Uschi Spiel-Ereignisse kommentieren?"
+            android:title="Uschi kommentiert" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="PREF_USCHI_SPEAKS"
+            android:enabled="false"
+            android:key="PREF_USCHI_FLIRTS"
+            android:summary="Soll Uschi philosophieren, flirten, zitieren etc.?"
+            android:title="Uschi 2.0" />
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

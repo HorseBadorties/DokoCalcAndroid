@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/lblExtrapunkte"
+        style="@style/TextWeiss"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="fill_vertical"
+        android:text="@string/extrapunkte" />
+
+    <TextView
+        android:id="@+id/txtPunkte"
+        style="@style/ExtrapunkteAnzahl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="fill_vertical"
+        android:paddingLeft="5dp"
+        android:text="@string/_0" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        style="@style/PlusMinusButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/plus" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        style="@style/PlusMinusButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/minus" />
+
+
+</LinearLayout>

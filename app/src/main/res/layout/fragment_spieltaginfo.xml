@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spieltagInfoFragment"
+    style="@style/FragmentSizes"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtSpieltagStatistik"
+            style="@style/Ueberschrift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spieltag_statistik" />
+    </TableRow>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/border"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/spieltaginfo_textView"
+            style="@style/TextWeiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </ScrollView>
+
+
+</TableLayout>

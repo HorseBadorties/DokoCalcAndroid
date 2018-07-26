@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spieltageFragment"
+    style="@style/FragmentSizes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="de.splitnass.android.activities.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail_spieltage_json"
+        android:onClick="emailSpieltageAsJson"/>
+
+    <TextView
+        android:id="@+id/txtSpieltagStatistik"
+        style="@style/Ueberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gesamt_statistik" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/border"
+        android:padding="5dp">
+
+        <TableLayout
+            android:id="@+id/spieltage_table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" />
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gespieltFragment"
+    style="@style/FragmentSizes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtGespielt"
+        style="@style/Ueberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gespielt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radioButtonGroupReKontra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/reGewinnt"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_gewinnt" />
+
+                <RadioButton
+                    android:id="@+id/kontraGewinnt"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kontra_gewinnt" />
+
+            </RadioGroup>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radioButtonGroupKeine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/gespielt120"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/_120" />
+
+                <RadioButton
+                    android:id="@+id/gespieltKeine9"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/keine_9" />
+
+                <RadioButton
+                    android:id="@+id/gespieltKeine6"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/keine_6" />
+
+                <RadioButton
+                    android:id="@+id/gespieltKeine3"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/keine_3" />
+
+                <RadioButton
+                    android:id="@+id/gespieltSchwarz"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/schwarz" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/InnerFragmentSizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp">
+
+            <view
+                android:id="@+id/extrapunkte"
+                class="de.splitnass.android.util.ExtrapunkteView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/solo"
+                style="@style/TextWeiss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp" />
+
+
+
+                <CheckBox
+                    android:id="@+id/armut"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:text="@string/armut"
+                    android:textColor="@color/text_color" />
+
+            <CheckBox
+                android:id="@+id/gegenDieSau"
+                style="@style/TextWeiss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:text="@string/gegen_die_sau"
+                android:textColor="@color/text_color" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

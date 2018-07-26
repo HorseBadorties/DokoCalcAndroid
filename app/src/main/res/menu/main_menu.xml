@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_menu">
+
+    <item
+        android:id="@+id/mnuBack"
+        android:onClick="backward"
+        android:title="&lt;&lt;"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/mnuForward"
+        android:onClick="forward"
+        android:title="&gt;&gt;"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/mnuRundeAbrechnen"
+        android:onClick="rundeAbrechnen"
+        android:title="Runde abrechnen"
+        app:showAsAction="always|withText" />
+
+
+    <item
+        android:id="@+id/mnuHerzGehtRum"
+        android:onClick="herzGehtRum"
+        android:title="Herz geht rum (Böcke)" />
+    <item
+        android:id="@+id/mnuBerechnungPruefen"
+        android:onClick="berechnungPruefen"
+        android:title="Berechnung prüfen" />
+
+
+    <item
+        android:id="@+id/mnuRunde"
+        android:title="Runde ...">
+        <menu>
+            <item
+                android:id="@+id/mnuReset"
+                android:onClick="resetAnsagenUndGespielt"
+                android:title="Reset &#34;Ansagen&#34; und &#34;Gespielt&#34;" />
+            <item
+                android:id="@+id/mnuGeheZu"
+                android:onClick="geheZu"
+                android:title="Gehe zu Runde.." />
+            <item
+                android:id="@+id/mnuSetzeErgebnis"
+                android:onClick="setzeErgebnis"
+                android:title="Ergebnis korrigieren" />
+            <item
+                android:id="@+id/mnuSetzeBoecke"
+                android:onClick="setzeBoecke"
+                android:title="Anzahl Böcke korrigieren" />
+        </menu>
+    </item>
+    <item android:title="Spieltag ...">
+        <menu>
+            <item
+                android:id="@+id/mnuSpieltaginfo"
+                android:onClick="startSpielertaginfo"
+                android:title="Spieltag-Statistik" />
+
+            <item
+                android:id="@+id/mnuSpielerSteigtEin"
+                android:onClick="spielerSteigtEin"
+                android:title="Spieler steigt ein" />
+            <item
+                android:id="@+id/mnuSpielerSteigtAus"
+                android:onClick="spielerSteigtAus"
+                android:title="Spieler steigt aus" />
+            <item
+                android:id="@+id/mnuPunktestandEinesSpielersAendern"
+                android:onClick="punktestandEinesSpielersAendern"
+                android:title="Punktestand eines Spielers ändern" />
+            <item
+                android:id="@+id/mnuSetzeRundenanzahl"
+                android:onClick="setzeRundenanzahl"
+                android:title="Setze Rundenanzahl" />
+            <item
+                android:id="@+id/mnuSpieltagEmail"
+                android:onClick="sendMail"
+                android:title="Sende E-Mail" />
+            <item
+                android:id="@+id/mnuLadeSpieltag"
+                android:onClick="loadSpieltagByID"
+                android:title="Spieltag laden" />
+            <item
+                android:id="@+id/mnuNeuerSpieltag"
+                android:onClick="neuerSpieltag"
+                android:title="Neuer Spieltag" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/mnuSettings"
+        android:onClick="openSettings"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/mnuStatistik"
+        android:onClick="gesamtStatistik"
+        android:title="Gesamt-Statistik" />
+</menu>

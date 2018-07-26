@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SplitnAss </string>
+    <string name="title_activity_swipe">SwipeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="_0">0</string>
+    <string name="re">Re</string>
+    <string name="von_vorneherein">von vorneher.</string>
+    <string name="keine_9">k. 9</string>
+    <string name="keine_6">k. 6</string>
+    <string name="keine_3">k. 3</string>
+    <string name="schwarz">schwarz</string>
+    <string name="kontra">Kontra</string>
+    <string name="ansagen">Angesagt</string>
+    <string name="gespielt">Gespielt</string>
+    <string name="re_gewinnt">Re gew.</string>
+    <string name="kontra_gewinnt">Kontra gew.</string>
+    <string name="solo">Solo:</string>
+    <string name="armut">Armut</string>
+    <string name="gegen_die_sau">gegen die Sau</string>
+    <string name="extrapunkte">Extrapunkte:</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="aktuelle_runde">Aktuelle Runde</string>
+    <string name="spieltag_statistik">Spieltag-Statistik</string>
+    <string name="_120">120</string>
+</resources>

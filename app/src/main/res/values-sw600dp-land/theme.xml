@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextSize">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="SpinnerDropdown">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="ExtrapunkteAnzahl" parent="TextSize">
+        <item name="android:layout_width">23dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

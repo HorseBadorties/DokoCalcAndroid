@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ansagenFragment"
+    style="@style/FragmentSizes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtAnsagen"
+        style="@style/Ueberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ansagen" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <view xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/reRadioGroup"
+            class="de.splitnass.android.util.ToggleButtonGroupTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/vonVornehereinRe"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/von_vorneherein" />
+
+                <RadioButton
+                    android:id="@+id/re"
+                    style="@style/TextWeiss"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/re" />
+
+
+                <RadioButton
+                    android:id="@+id/reKeine9"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/keine_9" />
+
+                <RadioButton
+                    android:id="@+id/reKeine6"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/keine_6" />
+
+                <RadioButton
+                    android:id="@+id/reKeine3"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/keine_3" />
+
+                <RadioButton
+                    android:id="@+id/reSchwarz"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/schwarz" />
+            </TableRow>
+        </view>
+
+        <view xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/kontraRadioGroup"
+            class="de.splitnass.android.util.ToggleButtonGroupTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <CheckBox
+                    android:id="@+id/vonVornehereinKontra"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/von_vorneherein" />
+
+                <RadioButton
+                    android:id="@+id/kontra"
+                    style="@style/TextWeiss"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/kontra" />
+
+                <RadioButton
+                    android:id="@+id/kontraKeine9"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/keine_9" />
+
+                <RadioButton
+                    android:id="@+id/kontraKeine6"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/keine_6" />
+
+                <RadioButton
+                    android:id="@+id/kontraKeine3"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/keine_3" />
+
+                <RadioButton
+                    android:id="@+id/kontraSchwarz"
+                    style="@style/TextWeiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/schwarz" />
+            </TableRow>
+        </view>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ourTextSize">12sp</dimen>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/colorBackgroud</item>
+        <item name="android:colorBackgroundCacheHint">@color/colorBackgroud</item>
+        <item name="colorAccent">@color/RundenblattSelectionColor</item>
+    </style>
+
+    <style name="TextSize">
+        <item name="android:textSize">@dimen/ourTextSize</item>
+    </style>
+
+    <style name="TextWeiss" parent="TextSize">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Ueberschrift" parent="TextSize">
+        <!--
+        android:background="?android:attr/selectableItemBackground"
+        -->
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+    </style>
+
+    <style name="PlusMinusButton" parent="TextWeiss">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ExtrapunkteAnzahl" parent="TextSize">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FragmentSizes">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@color/colorBackgroud</item>"
+    </style>
+
+    <style name="InnerRundeninfoSizes">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="InnerFragmentSizes">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="RundenblattItem" parent="TextWeiss">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:maxWidth">100dp</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <integer name="RundenblattItemSmallerWidth">160</integer>
+    <dimen name="RundenblattListMarginTop">5dp</dimen>
+    <color name="RundenblattSelectionColor">@android:color/holo_blue_light</color>
+
+</resources>

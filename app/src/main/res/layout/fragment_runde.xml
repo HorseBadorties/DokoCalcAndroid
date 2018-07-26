@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rundeFragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/rundeninfoFragment"
+        android:name="de.splitnass.android.fragments.RundenInfoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        tools:layout="@layout/fragment_rundeninfo"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <fragment
+        android:id="@+id/angesagtFragment"
+        android:name="de.splitnass.android.fragments.AngesagtFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        tools:layout="@layout/fragment_ansagen"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <fragment
+        android:id="@+id/gespieltFragment"
+        android:name="de.splitnass.android.fragments.GespieltFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        tools:layout="@layout/fragment_gespielt"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+</LinearLayout>
